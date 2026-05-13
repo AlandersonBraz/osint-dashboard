@@ -1,0 +1,83 @@
+/* --- Global Reset and Base Styles --- */
+body {
+    background: #000000; 
+    color: #00ff9c; 
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    
+    /* Using Flexbox to ensure perfect centering on all screen sizes */
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    box-sizing: border-box;
+}
+
+/* --- Matrix Background Animation --- */
+#matrix-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1; 
+}
+
+/* --- Main Dashboard Panel --- */
+.dashboard-container {
+    position: relative;
+    width: 100%;
+    max-width: 500px; 
+    background: rgba(0, 0, 0, 0.85);
+    padding: 30px;
+    border: 1px solid #00ff9c;
+    box-shadow: 0 0 25px #00ff9c;
+    border-radius: 8px; 
+    box-sizing: border-box;
+    z-index: 1; 
+}
+
+/* --- Header Styling --- */
+h1 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; 
+    text-align: center;
+}
+
+/* --- Navigation Links Menu --- */
+.links-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 12px; 
+}
+
+.links-menu a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px; 
+    padding: 12px 15px;
+    color: #00ff9c;
+    text-decoration: none;
+    border: 1px solid rgba(0, 255, 156, 0.3); 
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    background: rgba(0, 255, 156, 0.05); 
+    font-size: 0.95rem; 
+    word-break: break-word;
+}
+
+/* --- Interactive Hover Effects --- */
+.links-menu a:hover {
+    color: #000000;
+    background: #00ff9c; 
+    box-shadow: 0 0 15px #00ff9c;
+    transform: translateY(-3px);
+}
